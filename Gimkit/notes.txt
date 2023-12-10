@@ -1,0 +1,25 @@
+
+----- question page
+
+general div (id = "content")
+
+find question @ class - "notranslate lang-en"
+
+input class should be first input type
+
+to get submit button, get the parent of form and then div
+
+
+----- result page
+
+-- incorrect result
+"View Correct Answer" first div in 1st span
+
+answer in only "notranslate lang-en" class
+
+"Continue" div in 1st span
+
+
+
+
+can also find answer url in src of first iframe

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Gimkit Bot",
+  "description": "Will play gimkit for you",
+  "version": "1.0",
+  "author": "@tatestaples",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.gimkit.com/live/*"],
+      "js": ["main.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["listener.js"],
+    "persistent": true
+  },
+
+
+  "permissions": [
+    "webRequest",
+    "storage",
+    "https://www.gimkit.com/*"
+  ],
+
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  }
+}

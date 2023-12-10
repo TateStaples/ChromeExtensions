@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Hangman Solver",
+  "description": "Plays Hangman on CoolMathGames",
+  "version": "1.0",
+  "author": "@tatestaples",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://hangman-backend.coolmathgames.com/single"
+  ]
+}

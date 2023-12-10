@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+
+	"name": "Royal Road audio",
+	"description": "Will auto-speak a RoyalRoad book",
+	"version": "1.0",
+	"author": "@tatestaples",
+
+	"content_scripts": [
+		{
+			"matches": ["https://www.royalroad.com/fiction/*"],
+			"js": ["main.js"]
+		}
+	],
+
+    "permissions": [
+      "tts"
+    ]
+}
